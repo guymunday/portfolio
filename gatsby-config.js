@@ -9,11 +9,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
-        fonts: [`Inter`],
-        display: "swap",
-      },
+        fonts: [
+          {
+            family: 'Inter',
+            variable: true,
+            weights: ['200..900']
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,

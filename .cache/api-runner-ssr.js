@@ -2,8 +2,8 @@ var plugins = [{
       plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":["Inter"],"display":"swap"},
+      plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr'),
+      options: {"plugins":[],"fonts":[{"family":"Inter","variable":true,"weights":["200..900"]}]},
     },{
       plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},

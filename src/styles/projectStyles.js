@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 export const ProjectSkillsContainer = styled(motion.div)`
   box-sizing: border-box;
   background: var(--change);
-  color: var(--text);
+  color: var(--bg);
   padding: 10px;
   margin: 50px 0;
   width: 100%;
@@ -31,9 +31,9 @@ export const ProjectSkillsContainer = styled(motion.div)`
         }
       }
       a {
-        color: var(--text);
+        color: var(--bg);
         text-decoration: underline;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.3rem;
       }
       p {
@@ -75,11 +75,12 @@ export const Column = styled(motion.div)`
 `
 
 export const ProjectCopy = styled.p`
-  max-width: 600px;
+  max-width: 650px;
   color: var(--text);
   font-size: 1.3rem;
   font-weight: 450;
   margin: 0 auto 50px auto;
+  text-align: center;
 `
 
 export const ProjectOneColumnFlexPadding = styled(motion.div)`
@@ -96,6 +97,7 @@ export const ProjectOneColumnFlexPadding = styled(motion.div)`
 export const ProjectTwoColumnFlexPadding = styled(motion.div)`
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 900px;
   flex-direction: row;
@@ -108,24 +110,57 @@ export const ProjectTwoColumnFlexPadding = styled(motion.div)`
     padding: 10px;
   }
 `
+export const ProjectTwoRowFlexPadding = styled(motion.div)`
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  flex-direction: row;
+  margin: 50px auto;
+  padding: 20px;
+  overflow: hidden;
+  background: var(--change);
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 10px;
+  }
+`
+
 export const ColumnOne = styled(motion.div)`
   box-sizing: border-box;
-  width: 50%;
+  flex-grow: 1;
+  width: 33%;
   overflow: hidden;
   margin-right: 10px;
   @media (max-width: 768px) {
     margin-right: 0;
     margin-bottom: 10px;
+    width: 100%;
   }
 `
 
 export const ColumnTwo = styled(motion.div)`
   box-sizing: border-box;
-  width: 50%;
+  flex-grow: 1;
+  width: 33%;
   overflow: hidden;
   margin-left: 10px;
   @media (max-width: 768px) {
     margin-left: 0;
+    width: 100%;
+  }
+`
+
+export const ColumnThree = styled(motion.div)`
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  flex-grow: 2;
+  margin-top: 20px;
+  @media (max-width: 768px) {
+    margin-top: 10px;
+    width: 100%;
   }
 `
 

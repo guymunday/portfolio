@@ -30,6 +30,7 @@ html {
 body {
   font-size: 16px;
   line-height: 1.4;
+  font-weight: 450;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   overscroll-behavior: none;
   overflow-x: hidden;

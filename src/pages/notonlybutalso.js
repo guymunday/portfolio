@@ -6,8 +6,8 @@ import ProjectSkills from "../components/projects/ProjectSkills"
 // import ProjectOneColumn from "../components/projects/ProjectOneColumn"
 import ProjectOneColumnPadding from "../components/projects/ProjectOneColumnPadding"
 import ProjectTwoColumnPadding from "../components/projects/ProjectTwoColumnPadding"
-
-// import Image from "../components/images"
+import ProjectTwoRowPadding from "../components/projects/ProjectTwoRowPadding"
+import Image from "../components/images"
 
 const projectSkills = [
   "HTML",
@@ -91,6 +91,26 @@ const NotOnlyPage = () => {
             muted
             src={require("../assets/video/notOnlyWebsite.mp4")}
           ></video>
+        }
+      />
+      <ProjectTwoRowPadding
+        contentOne={
+          <Image
+            alt="Not Only — But Also interview"
+            filename="images/notonly/notonlyV.jpg"
+          />
+        }
+        contentTwo={
+          <Image
+            alt="Not Only — But Also interview"
+            filename="images/notonly/notonlyChloe.jpg"
+          />
+        }
+        contentThree={
+          <Image
+            alt="Not Only — But Also interview"
+            filename="images/notonly/notonlyOllyFranc.jpg"
+          />
         }
       />
       <ProjectTwoColumnPadding
