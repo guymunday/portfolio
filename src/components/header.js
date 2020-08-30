@@ -5,27 +5,7 @@ import { Container, Flex } from "../styles/globalStyles"
 import { HeaderNav, Logo, LightSwitch, Menu } from "../styles/headerStyles"
 import ThemeToggle from "../components/ThemeToggle"
 
-//context
-import {
-  useGlobalDispatchContext,
-  useGlobalStateContext,
-} from "../context/globalContext"
-
 const Header = ({ onCursor, setToggleMenu, toggleMenu }) => {
-  const dispatch = useGlobalDispatchContext()
-  const { currentTheme } = useGlobalStateContext()
-
-  const toggleTheme = () => {
-    if (currentTheme === "dark") {
-      dispatch({ type: "TOGGLE_THEME", theme: "light" })
-    } else {
-      dispatch({ type: "TOGGLE_THEME", theme: "dark" })
-    }
-  }
-
-  useEffect(() => {
-    window.localStorage.setItem("theme", currentTheme)
-  }, [currentTheme])
 
   return (
     <HeaderNav

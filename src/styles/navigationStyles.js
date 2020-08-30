@@ -22,6 +22,7 @@ export const NavHeader = styled.div`
   }
   h2 {
     color: var(--text);
+    font-weight: 600;
     @media (max-width: 450px) {
       display: none;
     }

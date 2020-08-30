@@ -71,7 +71,11 @@ export const ProjectTwoColumnFlex = styled(motion.div)`
 export const Column = styled(motion.div)`
   box-sizing: border-box;
   flex-grow: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
+  box-shadow: 3px 3px 4px #17223b;
+  video {
+    display: block;
+  }
 `
 
 export const ProjectCopy = styled.p`
@@ -133,6 +137,10 @@ export const ColumnOne = styled(motion.div)`
   width: 33%;
   overflow: hidden;
   margin-right: 10px;
+  box-shadow: 3px 3px 4px #17223b;
+  video {
+    display: block;
+  }
   @media (max-width: 768px) {
     margin-right: 0;
     margin-bottom: 10px;
@@ -146,6 +154,10 @@ export const ColumnTwo = styled(motion.div)`
   width: 33%;
   overflow: hidden;
   margin-left: 10px;
+  box-shadow: 3px 3px 4px #17223b;
+  video {
+    display: block;
+  }
   @media (max-width: 768px) {
     margin-left: 0;
     width: 100%;
@@ -158,6 +170,10 @@ export const ColumnThree = styled(motion.div)`
   overflow: hidden;
   flex-grow: 2;
   margin-top: 20px;
+  box-shadow: 3px 3px 4px #17223b;
+  video {
+    display: block;
+  }
   @media (max-width: 768px) {
     margin-top: 10px;
     width: 100%;

@@ -53,9 +53,13 @@ const HomePlayground = ({ onCursor }) => {
               <video
                 loop
                 width="100%"
-                height="auto"
-                autoPlay
+                height="450px"
                 muted
+                onMouseOver={event => event.target.play()}
+                onMouseOut={event => event.target.load()}
+                onFocus={event => event.target.play()}
+                onBlur={event => event.target.load()}
+                preload="metadata"
                 poster={require("../../assets/images/playgroundHero.jpg")}
                 src={require("../../assets/video/playgroundVideo.mp4")}
               ></video>
@@ -64,7 +68,7 @@ const HomePlayground = ({ onCursor }) => {
                 transition={{ duration: 0.6, ease: [0.6, 0.05, -0.01, 0.9] }}
                 className="marquee"
               >
-                <TakeAPeek/>
+                <TakeAPeek />
               </motion.div>
             </FeaturedVideo>
             <Flex spaceBetween>

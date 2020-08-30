@@ -9,6 +9,7 @@ export const HeaderNav = styled(motion.div)`
   right: 0;
   left: 0;
   z-index: 99;
+  background-color: transparent;
   @media (max-width: 768px) {
     top: 30px;
   }

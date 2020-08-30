@@ -25,7 +25,7 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
-    background-color: var(--bg);
+    background-color: transparent;
 }
 body {
   font-size: 16px;

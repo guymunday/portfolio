@@ -16,6 +16,9 @@ const marquee = keyframes`
 //Content Section
 export const HomeContentSection = styled(motion.div)`
   margin: 200px 0;
+  @media (max-width: 768px) {
+    margin: 100px 0;
+  }
 `
 export const Content = styled(motion.h2)`
   width: 100%;
@@ -64,10 +67,6 @@ export const FeaturedContent = styled(motion.div)`
   margin: auto;
   box-sizing: border-box;
   color: var(--text);
-  video {
-    box-sizing: border-box;
-    border: var(--change) solid 1px;
-  }
   h2 {
     font-size: 1.4rem;
   }
@@ -82,11 +81,18 @@ export const FeaturedContent = styled(motion.div)`
 `
 
 export const FeaturedVideo = styled.div`
-  z-index: -1;
   display: block;
   overflow: hidden;
   position: relative;
   object-fit: cover;
+  video {
+    display: block;
+    width: 100%;
+    max-height: 450px;
+    box-sizing: border-box;
+    border: var(--change) solid 1px;
+    object-fit: cover;
+  }
   .gatsby-image-wrapper {
     height: 100%;
     object-fit: cover;

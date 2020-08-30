@@ -52,9 +52,13 @@ const HomeNotOnly = ({ onCursor }) => {
               <video
                 loop
                 width="100%"
-                height="auto"
-                autoPlay
+                height="450px"
                 muted
+                onMouseOver={event => event.target.play()}
+                onMouseOut={event => event.target.load()}
+                onFocus={event => event.target.play()}
+                onBlur={event => event.target.load()}
+                preload="metadata"
                 poster={require("../../assets/images/notonly/notOnlyButAlsoMeta.png")}
                 src={require("../../assets/video/notOnlyWebsite.mp4")}
               ></video>
