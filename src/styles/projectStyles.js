@@ -2,59 +2,59 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 
 export const ProjectSkillsContainer = styled(motion.div)`
-  box-sizing: border-box;
-  background: var(--change);
-  color: var(--bg);
-  padding: 10px;
-  margin: 50px 0;
-  width: 100%;
-  overflow: hidden;
-  .skill-flex {
-    max-width: 850px;
-    margin: auto;
-    display: flex;
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
-    .tech-list {
-      width: 40%;
-      padding-bottom: 20px;
-      @media (max-width: 768px) {
-        width: 100%;
-      }
-      &:first-child {
-        flex-grow: 2;
-        width: 60%;
-        padding-right: 30px;
-        @media (max-width: 768px) {
-          width: 100%;
-        }
-      }
-      a {
-        color: var(--bg);
-        text-decoration: underline;
-        font-weight: 700;
-        font-size: 1.3rem;
-      }
-      p {
-        font-weight: 450;
-        font-size: 1rem;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        li {
-          box-sizing: border-box;
-          font-weight: 450;
-          font-size: 1rem;
-          padding-right: 0.5rem;
-        }
-      }
-    }
-  }
-`
+         box-sizing: border-box;
+         background: var(--change);
+         color: #17223b;
+         padding: 10px;
+         margin: 50px 0;
+         width: 100%;
+         overflow: hidden;
+         .skill-flex {
+           max-width: 850px;
+           margin: auto;
+           display: flex;
+           @media (max-width: 768px) {
+             flex-direction: column;
+           }
+           .tech-list {
+             width: 40%;
+             padding-bottom: 20px;
+             @media (max-width: 768px) {
+               width: 100%;
+             }
+             &:first-child {
+               flex-grow: 2;
+               width: 60%;
+               padding-right: 30px;
+               @media (max-width: 768px) {
+                 width: 100%;
+               }
+             }
+             a {
+               color: #17223b;
+               text-decoration: underline;
+               font-weight: 700;
+               font-size: 1.3rem;
+             }
+             p {
+               font-weight: 450;
+               font-size: 1rem;
+             }
+             ul {
+               list-style-type: none;
+               padding: 0;
+               display: flex;
+               flex-wrap: wrap;
+               li {
+                 box-sizing: border-box;
+                 font-weight: 450;
+                 font-size: 1rem;
+                 padding-right: 0.5rem;
+               }
+             }
+           }
+         }
+       `
 
 export const ProjectOneColumnFlex = styled(motion.div)`
   display: flex;

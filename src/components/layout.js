@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-
 //Styled Components
 import { createGlobalStyle } from "styled-components"
 import { normalize } from "styled-normalize"
@@ -9,6 +8,7 @@ import CustomCursor from "../components/customCursor"
 import Header from "./header"
 import Navigation from "./navigation"
 import Footer from "./footer"
+
 // Context
 import {
   useGlobalStateContext,

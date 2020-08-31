@@ -8,6 +8,8 @@ import ProjectOneColumnPadding from "../components/projects/ProjectOneColumnPadd
 import ProjectTwoColumnPadding from "../components/projects/ProjectTwoColumnPadding"
 import ProjectTwoRowPadding from "../components/projects/ProjectTwoRowPadding"
 import Image from "../components/images"
+import { ProjectCopy } from "../styles/projectStyles"
+
 
 const projectSkills = [
   "HTML",
@@ -113,6 +115,9 @@ const NotOnlyPage = () => {
           />
         }
       />
+      <Container>
+        <ProjectCopy>Hello</ProjectCopy>
+      </Container>
       <ProjectTwoColumnPadding
         contentOne={
           <video
@@ -135,6 +140,9 @@ const NotOnlyPage = () => {
           ></video>
         }
       />
+      <Container>
+        <ProjectCopy>Hello</ProjectCopy>
+      </Container>
     </Layout>
   )
 }

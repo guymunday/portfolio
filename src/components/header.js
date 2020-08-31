@@ -1,12 +1,11 @@
 import { Link } from "gatsby"
-import React, { useEffect } from "react"
+import React from "react"
 // Styled Components
 import { Container, Flex } from "../styles/globalStyles"
 import { HeaderNav, Logo, LightSwitch, Menu } from "../styles/headerStyles"
 import ThemeToggle from "../components/ThemeToggle"
 
 const Header = ({ onCursor, setToggleMenu, toggleMenu }) => {
-
   return (
     <HeaderNav
       animate={{ y: 0, opacity: 1 }}

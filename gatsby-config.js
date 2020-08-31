@@ -13,12 +13,12 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Inter',
+            family: "Inter",
             variable: true,
-            weights: ['200..900']
-          }
-        ]
-      }
+            weights: ["200..900"],
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -36,6 +36,19 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-video-poster`,
+            options: {
+              width: 900,
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-dark-mode`,

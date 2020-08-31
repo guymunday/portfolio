@@ -21,6 +21,7 @@
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-plugin-transition-link": "^1.20.2",
     "gatsby-plugin-use-dark-mode": "^1.1.2",
+    "gatsby-remark-video-poster": "^0.0.1-alpha.1",
     "gatsby-source-filesystem": "^2.3.25",
     "gatsby-transformer-sharp": "^2.5.13",
     "prop-types": "^15.7.2",
