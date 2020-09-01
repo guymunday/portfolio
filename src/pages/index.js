@@ -39,7 +39,7 @@ const IndexPage = props => {
 
   return (
     <AnimatePresence>
-      {finishLoading  ? (
+      {finishLoading && !sessionStorage.getItem("first_time") ? (
         <Loading />
       ) : (
         <motion.div
