@@ -20,12 +20,17 @@ import {
 import { motion, AnimatePresence } from "framer-motion"
 
 export const LoadingPage = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   left: 0;
   top: 0;
+  bottom: 0;
+  right: 0;
   background: #17223b;
+  display: block;
+  margin: 0;
+  padding: 0;
   .loading-div {
     position: fixed;
     width: 50%;

@@ -67,7 +67,10 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
         {toggleMenu && (
           <Nav
             initial={{ y: "-100%" }}
-            exit={{ x: "-100%" }}
+            exit={{
+              scale: 0,
+              rotate: 360,
+            }}
             animate={{ y: toggleMenu ? 0 : "-100%" }}
             transition={{ duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }}
           >
@@ -107,6 +110,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                           show: true,
                           video: route.video,
                           key: route.id,
+                          poster: route.poster,
                         })
                       }
                       onHoverEnd={() =>
@@ -114,6 +118,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                           show: false,
                           video: route.video,
                           key: route.id,
+                          poster: route.poster,
                         })
                       }
                     >
@@ -155,6 +160,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                   <AnimatePresence initial={false} exitBeforeEnter>
                     <motion.video
                       key={revealVideo.key}
+                      poster={require(`../assets/images/posters/${revealVideo.poster}`)}
                       src={require(`../assets/video/${revealVideo.video}`)}
                       initial={{ opacity: 0 }}
                       exit={{ opacity: 0 }}
