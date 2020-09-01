@@ -8,14 +8,16 @@ import { ProjectCopy } from "../styles/projectStyles"
 // import ProjectOneColumnPadding from "../components/projects/ProjectOneColumnPadding"
 import Image from "../components/images"
 import HumanRotateSection from "../components/projects/HumanRotateSection"
+import SEO from "../components/seo"
+
 
 const projectSkills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "jQuery",
-  "WordPress",
-  "ACF",
+  "HTML /",
+  "CSS /",
+  "JavaScript /",
+  "jQuery /",
+  "WordPress /",
+  "ACF /",
   "Adobe AfterEffects",
 ]
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
@@ -29,6 +31,7 @@ const scopeMapped = projectScope.map(scope => <p>{scope}</p>)
 const HumanPage = () => {
   return (
     <Layout>
+      <SEO title="Human Magazine" />
       <Container>
         <HeroCopy
           copy={
@@ -99,8 +102,9 @@ const HumanPage = () => {
       />
       <Container>
         <ProjectCopy>
-          I also had a lot of fun making some promotional videos for social
-          media.
+          I also had a lot of fun making promotional videos for social media and
+          the launch party which was unfortunately postponed due to Covid-19
+          lockdown.
         </ProjectCopy>
       </Container>
     </Layout>

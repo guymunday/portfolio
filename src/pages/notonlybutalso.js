@@ -9,21 +9,21 @@ import ProjectTwoColumnPadding from "../components/projects/ProjectTwoColumnPadd
 import ProjectTwoRowPadding from "../components/projects/ProjectTwoRowPadding"
 import Image from "../components/images"
 import { ProjectCopy } from "../styles/projectStyles"
-
+import SEO from "../components/seo"
 
 const projectSkills = [
-  "HTML",
-  "SCSS",
-  "JavaScript",
-  "GSAP3",
-  "WordPress",
-  "PHP",
-  "Adobe After Effects",
-  "Adobe Illustrator",
-  "Gatsby.js",
-  "CSS in JS",
-  "Prismic",
-  "Netlify",
+  "HTML /",
+  "SCSS /",
+  "JavaScript /",
+  "GSAP3 /",
+  "WordPress /",
+  "PHP /",
+  "Adobe After Effects /",
+  "Adobe Illustrator /",
+  "Gatsby.js /",
+  "CSS in JS /",
+  "Prismic /",
+  "Netlify"
 ]
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
@@ -36,6 +36,7 @@ const scopeMapped = projectScope.map(scope => <p>{scope}</p>)
 const NotOnlyPage = () => {
   return (
     <Layout>
+      <SEO title="Not Only — But Also" />
       <Container>
         <HeroCopy
           copy={
@@ -116,7 +117,11 @@ const NotOnlyPage = () => {
         }
       />
       <Container>
-        <ProjectCopy>Hello</ProjectCopy>
+        <ProjectCopy>
+          Behind the scenes we have been conducting interviews with loads of
+          brilliant people, gathering their stories and advice to help young
+          people better understand the creative industries and find a role that suits them.
+        </ProjectCopy>
       </Container>
       <ProjectTwoColumnPadding
         contentOne={
@@ -141,7 +146,10 @@ const NotOnlyPage = () => {
         }
       />
       <Container>
-        <ProjectCopy>Hello</ProjectCopy>
+        <ProjectCopy>
+          I have been having fun creating short animations for our Instagram
+          page which has seen great engagement.
+        </ProjectCopy>
       </Container>
     </Layout>
   )

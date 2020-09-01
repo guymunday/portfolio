@@ -7,21 +7,24 @@ import ProjectSkills from "../components/projects/ProjectSkills"
 import ProjectOneColumnPadding from "../components/projects/ProjectOneColumnPadding"
 import { ProjectCopy } from "../styles/projectStyles"
 // import Image from "../components/images"
+import SEO from "../components/seo"
+
 
 const projectSkills = [
-  "HTML",
-  "SCSS",
-  "JavaScript",
-  "GSAP3",
-  "WordPress",
-  "PHP",
-  "ACF",
+  "HTML /",
+  "SCSS /",
+  "JavaScript /",
+  "GSAP3 /",
+  "WordPress /",
+  "PHP /",
+  "ACF /",
   "Adobe CC",
 ]
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
 const projectScope = [
-  "A new agency website built on WordPress that is fully customisable through the WordPress CMS.",
+  "A new agency website built on WordPress that is fully managable through the WordPress CMS.",
+  "GSAP-powered animations bring the website to life with",
 ]
 
 const scopeMapped = projectScope.map(scope => <p>{scope}</p>)
@@ -31,6 +34,7 @@ const kemosabeLink = "https://kemosabe.girltuesday.net"
 const KemosabePage = () => {
   return (
     <Layout>
+      <SEO title="Kemosabe Agency Website" />
       <Container>
         <HeroCopy
           copy={

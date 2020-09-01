@@ -12,6 +12,13 @@ import HomeAna from "../components/homePage/HomeAna"
 import HomeHuman from "../components/homePage/HomeHuman"
 import SEO from "../components/seo"
 
+//Context
+import {
+  useGlobalStateContext,
+  useGlobalDispatchContext,
+} from "../context/globalContext"
+import { motion, AnimatePresence } from "framer-motion"
+
 export const LoadingPage = styled.div`
   position: relative;
   width: 100%;
@@ -64,13 +71,6 @@ export const LoadingPage = styled.div`
     font-weight: 600;
   }
 `
-
-//Context
-import {
-  useGlobalStateContext,
-  useGlobalDispatchContext,
-} from "../context/globalContext"
-import { motion, AnimatePresence } from "framer-motion"
 
 const IndexPage = props => {
   const dispatch = useGlobalDispatchContext()

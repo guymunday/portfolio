@@ -3,6 +3,8 @@ module.exports = {
     title: `Guy Munday's Portfolio`,
     description: `Front end development and digital design portfolio of Guy Munday.`,
     author: `Guy Munday`,
+    // url: "https://www.doe.com", // No trailing slash allowed!
+    // image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

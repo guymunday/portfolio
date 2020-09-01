@@ -3,18 +3,23 @@ import Layout from "../components/layout"
 import { Container } from "../styles/globalStyles"
 import Iframe from "react-iframe"
 import HeroCopy from "../components/HeroCopy"
+import SEO from "../components/seo"
 
 const PlaygroundPage = () => {
   return (
     <Layout>
+      <SEO title="Playground" />
       <Container>
         <HeroCopy
           copy={
             <>
-              Here is a collection of fun experiments I have made which explore the
-              HTML canvas tag, JS libraries such as Three.js and Matter.js and
-              even a custom typeface! Click, drag and have a play. More to come.{" "}
-               <span role="img" aria-label="eyes emoji">👀</span>
+              Here is a collection of fun experiments I have made which explore
+              the HTML canvas tag, JS libraries such as Three.js and Matter.js
+              and even a custom typeface! Click, drag and have a play. More to
+              come.{" "}
+              <span role="img" aria-label="eyes emoji">
+                👀
+              </span>
             </>
           }
         />

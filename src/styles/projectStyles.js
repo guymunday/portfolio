@@ -2,59 +2,59 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 
 export const ProjectSkillsContainer = styled(motion.div)`
-         box-sizing: border-box;
-         background: var(--change);
-         color: #17223b;
-         padding: 10px;
-         margin: 50px 0;
-         width: 100%;
-         overflow: hidden;
-         .skill-flex {
-           max-width: 850px;
-           margin: auto;
-           display: flex;
-           @media (max-width: 768px) {
-             flex-direction: column;
-           }
-           .tech-list {
-             width: 40%;
-             padding-bottom: 20px;
-             @media (max-width: 768px) {
-               width: 100%;
-             }
-             &:first-child {
-               flex-grow: 2;
-               width: 60%;
-               padding-right: 30px;
-               @media (max-width: 768px) {
-                 width: 100%;
-               }
-             }
-             a {
-               color: #17223b;
-               text-decoration: underline;
-               font-weight: 700;
-               font-size: 1.3rem;
-             }
-             p {
-               font-weight: 450;
-               font-size: 1rem;
-             }
-             ul {
-               list-style-type: none;
-               padding: 0;
-               display: flex;
-               flex-wrap: wrap;
-               li {
-                 box-sizing: border-box;
-                 font-weight: 450;
-                 font-size: 1rem;
-                 padding-right: 0.5rem;
-               }
-             }
-           }
-         }
-       `
+  box-sizing: border-box;
+  background: var(--change);
+  color: #17223b;
+  padding: 10px;
+  margin: 50px 0;
+  width: 100%;
+  overflow: hidden;
+  .skill-flex {
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    .tech-list {
+      width: 40%;
+      padding-bottom: 20px;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      &:first-child {
+        flex-grow: 2;
+        width: 60%;
+        padding-right: 30px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      a {
+        color: #17223b;
+        text-decoration: underline;
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+      p {
+        font-weight: 450;
+        font-size: 1rem;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          box-sizing: border-box;
+          font-weight: 450;
+          font-size: 1rem;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  }
+`
 
 export const ProjectOneColumnFlex = styled(motion.div)`
   display: flex;
@@ -71,8 +71,8 @@ export const ProjectTwoColumnFlex = styled(motion.div)`
 export const Column = styled(motion.div)`
   box-sizing: border-box;
   flex-grow: 1;
-  /* overflow: hidden; */
-  box-shadow: 3px 3px 4px #17223b;
+  width: 100%;
+  box-shadow: 3px 3px 4px #000;
   video {
     display: block;
   }
@@ -137,7 +137,7 @@ export const ColumnOne = styled(motion.div)`
   width: 33%;
   overflow: hidden;
   margin-right: 10px;
-  box-shadow: 3px 3px 4px #17223b;
+  box-shadow: 3px 3px 4px #000;
   video {
     display: block;
   }
@@ -154,7 +154,7 @@ export const ColumnTwo = styled(motion.div)`
   width: 33%;
   overflow: hidden;
   margin-left: 10px;
-  box-shadow: 3px 3px 4px #17223b;
+  box-shadow: 3px 3px 4px #000;
   video {
     display: block;
   }
@@ -170,12 +170,67 @@ export const ColumnThree = styled(motion.div)`
   overflow: hidden;
   flex-grow: 2;
   margin-top: 20px;
-  box-shadow: 3px 3px 4px #17223b;
+  box-shadow: 3px 3px 4px #000;
   video {
     display: block;
   }
   @media (max-width: 768px) {
     margin-top: 10px;
+    width: 100%;
+  }
+`
+
+export const RowColumn = styled(motion.div)`
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 33%;
+  overflow: hidden;
+  box-shadow: 3px 3px 4px #000;
+  &:first-child {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  &:nth-child(2) {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  &:nth-child(3) {
+    margin-right: 10px;
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  &:nth-child(4) {
+    margin-left: 10px;
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  video {
+    display: block;
+  }
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
     width: 100%;
   }
 `
