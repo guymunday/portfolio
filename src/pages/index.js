@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
+import styled from "styled-components"
 
 //Components
+import Loading from "../components/loading"
 import HeroCopy from "../components/HeroCopy"
 import HomeKemosabe from "../components/homePage/HomeKemosabe"
 import HomeNotOnly from "../components/homePage/HomeNotOnly"
@@ -9,7 +11,59 @@ import HomePlayground from "../components/homePage/HomePlayground"
 import HomeAna from "../components/homePage/HomeAna"
 import HomeHuman from "../components/homePage/HomeHuman"
 import SEO from "../components/seo"
-import Loading from "../components/loading"
+
+export const LoadingPage = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #17223b;
+  .loading-div {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    top: 0;
+    background: #ffa3af;
+  }
+  .loading-div-2 {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background: #ffa3af;
+  }
+  .loading-div-3 {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    background: #ffa3af;
+  }
+  .loading-div-4 {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    right: 0;
+    bottom: 0;
+    background: #ffa3af;
+  }
+  h3 {
+    /* display: block; */
+    position: fixed;
+    transform-origin: center center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+  }
+`
 
 //Context
 import {
