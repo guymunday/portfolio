@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
 
-export const LoadingPage = styled(motion.div)`
+export const LoadingPage = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
@@ -65,11 +65,7 @@ const Loading = () => {
   }, [counter])
 
   return (
-    <LoadingPage
-      initial={{ opacity: "0" }}
-      animate={{ opacity: "1" }}
-      exit={{ opacity: "0" }}
-    >
+    <LoadingPage>
       <motion.div
         initial={{ height: "50%" }}
         animate={{ height: "0" }}
