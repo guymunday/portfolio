@@ -35,6 +35,8 @@ const IndexPage = props => {
     }, 3000)
   }, [])
 
+  // && !sessionStorage.getItem("first_time")
+
   return (
     <AnimatePresence>
       {finishLoading &&
