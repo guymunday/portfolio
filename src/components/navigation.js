@@ -14,6 +14,7 @@ import {
 //Icons
 //Framer Motion
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "../components/images"
 
 const navRoutes = [
   {
@@ -158,9 +159,18 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                 ></motion.div>
                 <motion.div className="video">
                   <AnimatePresence initial={false} exitBeforeEnter>
+                    <motion.img
+                      key={revealVideo.key}
+                      src={require(`../assets/images/posters/${revealVideo.poster}`)}
+                      initial={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      animate={{
+                        opacity: 1,
+                      }}
+                      transition={{ duration: 0.2, ease: "easeInOut" }}
+                    />
                     <motion.video
                       key={revealVideo.key}
-                      poster={require(`../assets/images/posters/${revealVideo.poster}`)}
                       src={require(`../assets/video/${revealVideo.video}`)}
                       initial={{ opacity: 0 }}
                       exit={{ opacity: 0 }}
