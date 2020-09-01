@@ -52,37 +52,40 @@ export const CloseNav = styled.div`
 `
 
 export const NavList = styled.div`
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  ul {
-    top: 60px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    li {
-      list-style: none;
-      font-size: 2rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      line-height: 1.1;
-      flex-grow: 1;
-      padding: 20px 0;
-      @media (max-height: 600px) {
-        padding: 10px;
-        font-size: 1.4rem;
-      }
-      .link {
-        color: var(--text);
-        position: relative;
-        display: flex;
-        align-items: center;
-      }
-    }
-  }
-`
+         height: 100%;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         ul {
+           top: 60px;
+           padding: 0;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           li {
+             list-style: none;
+             font-size: 2rem;
+             text-transform: uppercase;
+             font-weight: 700;
+             line-height: 1.1;
+             flex-grow: 1;
+             padding: 20px 0;
+             @media (max-height: 600px) {
+               padding: 10px;
+               font-size: 1.4rem;
+             }
+             @media (max-width: 450px) {
+               font-size: 1.3rem;
+             }
+             .link {
+               color: var(--text);
+               position: relative;
+               display: flex;
+               align-items: center;
+             }
+           }
+         }
+       `
 export const NavFooter = styled.div`
   bottom: 60px;
   position: relative;

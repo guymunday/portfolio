@@ -81,40 +81,43 @@ export const FeaturedContent = styled(motion.div)`
 `
 
 export const FeaturedVideo = styled.div`
-  display: block;
-  overflow: hidden;
-  position: relative;
-  object-fit: cover;
-  video {
-    display: block;
-    width: 100%;
-    max-height: 450px;
-    box-sizing: border-box;
-    border: var(--change) solid 1px;
-    object-fit: cover;
-  }
-  .gatsby-image-wrapper {
-    height: 100%;
-    object-fit: cover;
-    border: var(--change) 1px solid;
-  }
-  .marquee {
-    position: absolute;
-    bottom: 0;
-    left: -20%;
-    width: 300%;
-    overflow: hidden;
-    transform-origin: left center;
-    transform: rotate(-45deg);
-    background: var(--change);
-    box-shadow: 3px 3px 4px #17223b;
-    p {
-      white-space: nowrap;
-      color: var(--bg);
-      animation: ${marquee} 25s linear infinite;
-    }
-  }
-`
+         display: block;
+         overflow: hidden;
+         position: relative;
+         object-fit: cover;
+         video {
+           display: block;
+           width: 100%;
+           max-height: 450px;
+           box-sizing: border-box;
+           border: var(--change) solid 1px;
+           object-fit: cover;
+           @media (max-width: 450px) {
+             max-height: 300px;
+           }
+         }
+         .gatsby-image-wrapper {
+           height: 100%;
+           object-fit: cover;
+           border: var(--change) 1px solid;
+         }
+         .marquee {
+           position: absolute;
+           bottom: 0;
+           left: -20%;
+           width: 300%;
+           overflow: hidden;
+           transform-origin: left center;
+           transform: rotate(-45deg);
+           background: var(--change);
+           box-shadow: 3px 3px 4px #17223b;
+           p {
+             white-space: nowrap;
+             color: var(--bg);
+             animation: ${marquee} 25s linear infinite;
+           }
+         }
+       `
 
 export const FeaturedProjects = styled.div`
   margin-top: 200px;

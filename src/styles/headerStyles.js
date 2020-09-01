@@ -34,17 +34,23 @@ const wiggle = keyframes`
 `
 
 export const LightSwitch = styled.div`
-         font-size: 1.8rem;
-         transition: 0.2s ease;
-         position: absolute;
-         top: 3px;
-         left: 50%;
-         transform: translateX(-50%);
-         :hover {
-           font-size: 2.8rem;
-           animation: ${wiggle} 1s ease infinite;
-         }
-       `
+  font-size: 1.8rem;
+  transition: 0.2s ease;
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  :hover {
+    font-size: 2.8rem;
+    animation: ${wiggle} 1s ease infinite;
+  }
+  @media (max-width: 450px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+  }
+`
 
 export const Menu = styled.div`
   button {
