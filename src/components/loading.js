@@ -12,6 +12,7 @@ const Loading = () => {
   }, [counter])
 
   return (
+    <>
     <LoadingPage>
       <motion.div
         initial={{ height: "50%" }}
@@ -50,7 +51,8 @@ const Loading = () => {
         className="loading-div-4"
       />
       <h3>{counter}%</h3>
-    </LoadingPage>
+      </LoadingPage>
+      </>
   )
 }
 

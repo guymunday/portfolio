@@ -13,7 +13,7 @@ import HomeHuman from "../components/homePage/HomeHuman"
 import SEO from "../components/seo"
 
 export const LoadingPage = styled.div`
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 100%;
   left: 0;
