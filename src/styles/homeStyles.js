@@ -186,8 +186,9 @@ export const FeaturedVideo = styled.div`
 `
 
 export const HomeShadow = styled.div`
-         box-shadow: 3px 3px 4px #17223b;
-       `
+  box-shadow: 3px 3px 4px #17223b;
+  background: var(--change);
+`
 
 export const FeaturedProjects = styled.div`
   margin-top: 200px;

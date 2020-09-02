@@ -13,7 +13,7 @@ const Footer = ({ onCursor }) => {
   const animation = useAnimation()
   const [footerRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: "200px",
+    rootMargin: "100px",
   })
   useEffect(() => {
     if (inView) {
