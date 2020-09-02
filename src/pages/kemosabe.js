@@ -9,7 +9,6 @@ import { ProjectCopy } from "../styles/projectStyles"
 // import Image from "../components/images"
 import SEO from "../components/seo"
 
-
 const projectSkills = [
   "HTML /",
   "SCSS /",
@@ -23,8 +22,8 @@ const projectSkills = [
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
 const projectScope = [
-  "A new agency website built on WordPress that is fully managable through the WordPress CMS.",
-  "GSAP-powered animations bring the website to life with",
+  "A new agency website built on WordPress featuring a custom theme that is fully managable through the WordPress CMS, making use of the Advanced Custom Fields plugin.",
+  "GSAP-powered animations throughout the site bring the website to life and make for a fun and engaging user experience.",
 ]
 
 const scopeMapped = projectScope.map(scope => <p>{scope}</p>)
@@ -39,7 +38,7 @@ const KemosabePage = () => {
         <HeroCopy
           copy={
             <>
-              I have been designing and developing a{" "}
+              Over the past few months I have been designing and developing a{" "}
               <a
                 href="https://kemosabe.girltuesday.net"
                 target="_blank"
@@ -47,14 +46,27 @@ const KemosabePage = () => {
               >
                 new website
               </a>{" "}
-              for Kemosabe that better represented the agency. We explored who
-              they are and what about them makes them unique, exposing their
-              "inch wide, mile deep" philosophy and applying it throughout their
-              website.
+              for Kemosabe that better represents them as an agency. We explored
+              who they are and what makes them unique, exposing their "inch
+              wide, mile deep" philosophy. This formed the central concept for
+              their new website.
             </>
           }
         />
       </Container>
+      <ProjectSkills
+        skills={projectMapped}
+        scope={scopeMapped}
+        link={kemosabeLink}
+        linkDescription={
+          <>
+            Launch the test site{" "}
+            <span role="img" aria-label="open book emoji">
+              🚀
+            </span>
+          </>
+        }
+      />
       <ProjectOneColumnPadding
         content={
           <>
@@ -71,24 +83,11 @@ const KemosabePage = () => {
       />
       <Container>
         <ProjectCopy>
-          The core value of Kemosabe is their "inch wide, mile deep" approach to
-          their work. I brought this front and centre with a bold animation
-          penetrating a "mile deep" throughout their projects.
+          I brought their core "inch wide, mile deep" philosophy front and
+          centre with a bold animation penetrating a "mile deep" throughout
+          their projects and applied it across the site.
         </ProjectCopy>
       </Container>
-      <ProjectSkills
-        skills={projectMapped}
-        scope={scopeMapped}
-        link={kemosabeLink}
-        linkDescription={
-          <>
-            Launch the test site{" "}
-            <span role="img" aria-label="open book emoji">
-              🚀
-            </span>
-          </>
-        }
-      />
       <ProjectOneColumnPadding
         content={
           <>
@@ -119,8 +118,9 @@ const KemosabePage = () => {
       />
       <Container>
         <ProjectCopy>
-          All the animations are powered with GSAP3 timelines with use of the
-          ScrollTrigger plugin on the homepage and the about page.
+          Across the site the animations are powered with GSAP3 timelines with
+          the homepage and the about page making use of the ScrollTrigger
+          plugin.
         </ProjectCopy>
       </Container>
       <ProjectOneColumnPadding
@@ -138,8 +138,8 @@ const KemosabePage = () => {
       <Container>
         <ProjectCopy>
           Working with the team, we approached the case studies with the same
-          philosophy, refreshing the copy to really capture the "inch wide" and
-          the "mile deep" of every project.
+          "inch wide" and the "mile deep" philosophy, refreshing the copy and
+          user experience and put it at the heart of every project.
         </ProjectCopy>
       </Container>
     </Layout>

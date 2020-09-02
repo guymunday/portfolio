@@ -6,7 +6,7 @@ var plugins = [{
       options: {"plugins":[],"fonts":[{"family":"Inter","variable":true,"weights":["200..900"]}]},
     },{
       plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
+      options: {"plugins":[],"name":"Guy Munday's Portfolio","short_name":"Guy Munday","start_url":"/","background_color":"#17223b","theme_color":"#17223b","display":"minimal-ui","icon":"src/assets/images/guyFavicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"bec1e65911f28df9c0c75b1e38245d31"},
     },{
       plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-dark-mode/gatsby-ssr'),
       options: {"plugins":[]},

@@ -1,14 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Container } from "../styles/globalStyles"
-import HeroCopy from "../components/HeroCopy"
 import AboutSkills from "../components/projects/AboutSkills"
-// import ProjectTwoColumnPadding from "../components/projects/ProjectTwoColumnPadding"
-// import ProjectOneColumnPadding from "../components/projects/ProjectOneColumnPadding"
-// import Image from "../components/images"
-// import Email from "../components/Email"
 import AboutPhoto from "../components/projects/AboutPhoto"
 import AboutContact from "../components/projects/AboutContact"
+import CopyBig from "../components/CopyBig"
 import SEO from "../components/seo"
 
 const projectSkills = [
@@ -50,7 +46,40 @@ const AnaPage = () => {
     <Layout>
       <SEO title="About Me" />
       <Container>
-        <AboutPhoto />
+        <AboutPhoto
+          copy={
+            <>
+              Hello (again), I'm Guy.{" "}
+              <span role="img" aria-label="waving hand emoji">
+                👋
+              </span>{" "}
+              <br />
+              <br />
+              Originally from Stockport, I'm currently living in south London and
+              working at the creative agency, Kemosabe.
+            </>
+          }
+        />
+        <CopyBig
+          copy={
+            <>
+              I have over 4 years commercial experience working as both a
+              Front-end Developer and Designer. I love creating enjoyable and
+              engaging user experiences with a focus on beautiful design and
+              usability. I also co-run{" "}
+              <a
+                href="https://notonlybutalso.org"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Not Only — But Also
+              </a>
+              , a new platform to help shed light on the less talked about roles
+              within the creative industry. After hours you can find me running,
+              eating or coding.
+            </>
+          }
+        />
       </Container>
       <AboutSkills skills={projectMapped} scope={scopeMapped} />
       <Container>

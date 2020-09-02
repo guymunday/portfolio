@@ -40,29 +40,31 @@ export const Content = styled(motion.h2)`
   }
 `
 export const ContentAbout = styled(motion.h2)`
-  width: 75%;
-  flex-grow: 1;
-  padding-left: 30px;
-  margin: auto;
-  font-size: 1.8rem;
-  font-weight: 450;
-  color: var(--text);
-  a {
-    color: var(--text);
-    text-decoration: underline;
-  }
-  @media (max-width: 768px) {
-    font-size: 1.3rem;
-  }
-  @media (max-width: 500px) {
-    width: 100%;
-    padding-left: 0;
-  }
-  span {
-    display: inline-block;
-    animation: ${wiggleEmoji} 1.5s ease infinite;
-  }
-`
+         width: 75%;
+         flex-grow: 1;
+         margin: auto;
+         font-size: 1.8rem;
+         font-weight: 450;
+         color: var(--text);
+         &:nth-child(2) {
+           padding-left: 30px;
+         }
+         a {
+           color: var(--text);
+           text-decoration: underline;
+         }
+         @media (max-width: 768px) {
+           font-size: 1.3rem;
+         }
+         @media (max-width: 500px) {
+           width: 100%;
+           padding-left: 0;
+         }
+         span {
+           display: inline-block;
+           animation: ${wiggleEmoji} 1.5s ease infinite;
+         }
+       `
 export const AboutImage = styled(motion.div)`
   position: relative;
   margin: 200px 0;

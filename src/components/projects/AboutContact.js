@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
-import { ContentCover, ContentAbout, AboutImage } from "../../styles/homeStyles"
-import { motion, useAnimation } from "framer-motion"
+import { ContentAbout, AboutImage } from "../../styles/homeStyles"
+import { useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import AboutEmail from "../projects/AboutEmail"
 
@@ -33,7 +33,8 @@ const AboutContact = props => {
     >
       <div className="about-inner">
         <ContentAbout>
-          If you'd like to chat please feel free to get in touch: <AboutEmail />.
+          If you'd like to chat please feel free to get in touch, I'd love to
+          hear from you: <AboutEmail />.
         </ContentAbout>
       </div>
     </AboutImage>

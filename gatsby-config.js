@@ -32,12 +32,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Guy Munday's Portfolio`,
+        short_name: `Guy Munday`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#17223b`,
+        theme_color: `#17223b`,
         display: `minimal-ui`,
+        icon: `src/assets/images/guyFavicon.png`,
       },
     },
     {

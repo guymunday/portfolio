@@ -21,7 +21,16 @@ const Header = ({ onCursor, setToggleMenu, toggleMenu }) => {
             onMouseEnter={() => onCursor("hovered")}
             onMouseLeave={onCursor}
           >
-            <Link to="/">Guy Munday</Link>
+            <Link
+              to={
+                typeof window !== "undefined" &&
+                window.location.pathname === "/"
+                  ? "/about"
+                  : "/"
+              }
+            >
+              Guy Munday
+            </Link>
           </Logo>
           <LightSwitch
             onMouseEnter={() => onCursor("pointer")}

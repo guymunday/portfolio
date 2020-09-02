@@ -23,7 +23,7 @@ const projectSkills = [
   "Gatsby.js /",
   "CSS in JS /",
   "Prismic /",
-  "Netlify"
+  "Netlify",
 ]
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
@@ -84,18 +84,6 @@ const NotOnlyPage = () => {
           </>
         }
       />
-      <ProjectOneColumnPadding
-        content={
-          <video
-            loop
-            width="100%"
-            height="auto"
-            controls
-            muted
-            src={require("../assets/video/notOnlyWebsite.mp4")}
-          ></video>
-        }
-      />
       <ProjectTwoRowPadding
         contentOne={
           <Image
@@ -120,7 +108,8 @@ const NotOnlyPage = () => {
         <ProjectCopy>
           Behind the scenes we have been conducting interviews with loads of
           brilliant people, gathering their stories and advice to help young
-          people better understand the creative industries and find a role that suits them.
+          people better understand the creative industries and find a role that
+          suits them.
         </ProjectCopy>
       </Container>
       <ProjectTwoColumnPadding
@@ -149,6 +138,26 @@ const NotOnlyPage = () => {
         <ProjectCopy>
           I have been having fun creating short animations for our Instagram
           page which has seen great engagement.
+        </ProjectCopy>
+      </Container>
+      <ProjectOneColumnPadding
+        content={
+          <video
+            loop
+            width="100%"
+            height="auto"
+            controls
+            muted
+            src={require("../assets/video/notOnlyWebsite.mp4")}
+          ></video>
+        }
+      />
+      <Container>
+        <ProjectCopy>
+          All of the content we are collecting will exist on a new site built
+          with JAMstack technologies, namely Gatsby.js, Prismic CMS and Netlify.
+          The current landing page is built on a custom WordPress theme with
+          GSAP3 animations.
         </ProjectCopy>
       </Container>
     </Layout>

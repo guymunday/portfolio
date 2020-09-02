@@ -16,6 +16,7 @@ const Email = () => {
   }, [])
   return (
     <ButtonWrap
+      title="Click to copy to clipboard"
       ref={email}
       className="email"
       onClick={() => navigator.clipboard.writeText("guymunday@gmail.com")}

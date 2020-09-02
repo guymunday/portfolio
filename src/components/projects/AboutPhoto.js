@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { ContentCover, ContentAbout, AboutImage } from "../../styles/homeStyles"
-import { motion, useAnimation } from "framer-motion"
+import { useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import Image from "../images"
 
@@ -33,15 +33,7 @@ const AboutPhoto = props => {
     >
       <div className="about-inner">
         <Image alt="Guy Munday" filename="guyMunday.jpg" />
-        <ContentAbout>
-          Hello (again), I'm Guy.
-          <span role="img" aria-label="waving hand emoji">
-            👋
-          </span>{" "}
-          I am a Front-end Developer and Designer with over 4 years
-          commercial experience. I love creating enjoyable and engaging user
-          experiences with a focus on beautiful design and usability.
-        </ContentAbout>
+        <ContentAbout>{props.copy}</ContentAbout>
       </div>
       <ContentCover
         initial={{ width: "100%", left: "0" }}

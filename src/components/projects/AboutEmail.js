@@ -16,6 +16,7 @@ const AboutEmail = () => {
   }, [])
   return (
     <AboutButtonWrap
+      title="Click to copy to clipboard"
       ref={email}
       className="email"
       aria-label="Click to copy to clipboard"
