@@ -25,15 +25,15 @@ const IndexPage = props => {
   }
   return (
     <Layout>
-      <SEO title="Guy Munday" />
+      <SEO title="Whoops..." />
       <HeroCopy
         copy={
           <>
             Whoops, you've gone the wrong way.{" "}
-            <span role="img" aria-label="face palm emoji">
+            <span role="img" aria-label="thumbs down emoji">
               👎
             </span>{" "}
-            Scroll down to get back on track.
+            Scroll down or click the menu to get back on track.
           </>
         }
       />

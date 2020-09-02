@@ -14,7 +14,6 @@ import {
 //Icons
 //Framer Motion
 import { motion, AnimatePresence } from "framer-motion"
-import Image from "../components/images"
 
 const navRoutes = [
   {

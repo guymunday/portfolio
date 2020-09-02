@@ -28,6 +28,7 @@ export const ProjectSkillsContainer = styled(motion.div)`
         padding-right: 30px;
         @media (max-width: 768px) {
           width: 100%;
+          padding-right: 0;
         }
       }
       a {
@@ -40,6 +41,45 @@ export const ProjectSkillsContainer = styled(motion.div)`
         font-weight: 450;
         font-size: 1rem;
       }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          box-sizing: border-box;
+          font-weight: 450;
+          font-size: 1rem;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  }
+  .about-flex {
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    .tech-list {
+      &:first-child {
+        width: 50%;
+        padding-right: 15px;
+        @media (max-width: 768px) {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+      &:nth-child(2) {
+        width: 50%;
+        padding-left: 15px;
+        @media (max-width: 768px) {
+          width: 100%;
+          padding-left: 0;
+        }
+      }
+
       ul {
         list-style-type: none;
         padding: 0;
@@ -305,3 +345,4 @@ export const HumanRotate = styled.div`
     }
   }
 `
+

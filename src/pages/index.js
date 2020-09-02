@@ -115,7 +115,7 @@ const IndexPage = props => {
                   <span role="img" aria-label="waving hand emoji">
                     👋
                   </span>{" "}
-                  I'm a Front-End Developer and Designer with a love for motion,
+                  I'm a Front-end Developer and Designer with a love for motion,
                   interaction design and all things digital. I love exploring
                   new technologies and learning new things along the way.
                 </>
