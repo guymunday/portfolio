@@ -20,7 +20,7 @@ const projectSkills = [
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
 const projectScope = [
-  "A new agency website built on WordPress featuring a custom theme that is fully managable through the WordPress CMS, making use of the Advanced Custom Fields plugin.",
+  "A new agency website built on WordPress featuring a custom theme that is fully manageable through the WordPress CMS, making use of the Advanced Custom Fields plugin.",
   "GSAP-powered animations throughout the site bring the website to life and make for a fun and engaging user experience.",
 ]
 

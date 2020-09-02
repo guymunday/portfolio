@@ -135,7 +135,7 @@ const HumanPage = () => {
           As this website was to compliment a physical magazine, I brought in
           interactive elements to make the website feel more tactile. The blocks
           of colours are randomised on load as is the logo to bring in the
-          playful, collage asthetic.
+          playful, collage aesthetic.
         </ProjectCopy>
       </Container>
     </Layout>

@@ -27,7 +27,7 @@ const projectSkills = [
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
 const projectScope = [
-  "On-going project to help give young creatives valuble information about the creative industries, its structure and what opportunities are out there.",
+  "On-going project to help give young creatives valuable information about the creative industries, its structure and what opportunities are out there.",
   "The current landing page is built on WordPress and I am in the process of building the full website with JAMstack technologies Gatsby.js, Prismic CMS and Netlify.",
 ]
 const scopeMapped = projectScope.map(scope => <p>{scope}</p>)
