@@ -10,7 +10,6 @@ import Image from "../components/images"
 import HumanRotateSection from "../components/projects/HumanRotateSection"
 import SEO from "../components/seo"
 
-
 const projectSkills = [
   "HTML /",
   "CSS /",
@@ -102,9 +101,41 @@ const HumanPage = () => {
       />
       <Container>
         <ProjectCopy>
-          I also had a lot of fun making promotional videos for social media and
-          the launch party which was unfortunately postponed due to Covid-19
+          I had a lot of fun making promotional videos for social media and the
+          launch party which was unfortunately postponed due to Covid-19
           lockdown.
+        </ProjectCopy>
+      </Container>
+      <ProjectOneColumn
+        content={
+          <video
+            loop
+            width="100%"
+            height="auto"
+            controls
+            muted
+            src={require("../assets/video/humanHeader.mp4")}
+          ></video>
+        }
+      />
+      <ProjectOneColumn
+        content={
+          <video
+            loop
+            width="100%"
+            height="auto"
+            controls
+            muted
+            src={require("../assets/video/humanClick.mp4")}
+          ></video>
+        }
+      />
+      <Container>
+        <ProjectCopy>
+          As this website was to compliment a physical magazine, I brought in
+          interactive elements to make the website feel more tactile. The blocks
+          of colours are randomised on load as is the logo to bring in the
+          playful, collage asthetic.
         </ProjectCopy>
       </Container>
     </Layout>

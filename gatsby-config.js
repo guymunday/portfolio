@@ -1,10 +1,13 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `Guy Munday's Portfolio`,
     description: `Front end development and digital design portfolio of Guy Munday.`,
     author: `Guy Munday`,
-    // url: "https://www.doe.com", // No trailing slash allowed!
-    // image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    url: "https://www.guymunday.com", // No trailing slash allowed!
+    image: "/images/guyFavicon.png", // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -56,6 +59,13 @@ module.exports = {
     },
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GA_TRACKING_ID,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
