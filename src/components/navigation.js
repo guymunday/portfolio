@@ -77,7 +77,14 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
             <Container>
               <NavHeader>
                 <Flex spaceBetween noHeight>
-                  <h2 to="/">Projects</h2>
+                  <Link
+                    to="/"
+                    onClick={() => setToggleMenu(!toggleMenu)}
+                    onMouseEnter={() => onCursor("pointer")}
+                    onMouseLeave={onCursor}
+                  >
+                    Home
+                  </Link>
                   <Link
                     to="/about"
                     onClick={() => setToggleMenu(!toggleMenu)}

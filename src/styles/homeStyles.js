@@ -40,31 +40,34 @@ export const Content = styled(motion.h2)`
   }
 `
 export const ContentAbout = styled(motion.h2)`
-         width: 75%;
-         flex-grow: 1;
-         margin: auto;
-         font-size: 1.8rem;
-         font-weight: 450;
-         color: var(--text);
-         &:nth-child(2) {
-           padding-left: 30px;
-         }
-         a {
-           color: var(--text);
-           text-decoration: underline;
-         }
-         @media (max-width: 768px) {
-           font-size: 1.3rem;
-         }
-         @media (max-width: 500px) {
-           width: 100%;
-           padding-left: 0;
-         }
-         span {
-           display: inline-block;
-           animation: ${wiggleEmoji} 1.5s ease infinite;
-         }
-       `
+  width: 75%;
+  flex-grow: 1;
+  margin: auto;
+  font-size: 1.8rem;
+  font-weight: 450;
+  color: var(--text);
+  &:nth-child(2) {
+    padding-left: 30px;
+    @media (max-width: 500px) {
+      padding-left: 0;
+    }
+  }
+  a {
+    color: var(--text);
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+    padding-left: 0;
+  }
+  span {
+    display: inline-block;
+    animation: ${wiggleEmoji} 1.5s ease infinite;
+  }
+`
 export const AboutImage = styled(motion.div)`
   position: relative;
   margin: 200px 0;
@@ -86,23 +89,23 @@ export const AboutImage = styled(motion.div)`
 `
 
 export const AboutButtonWrap = styled(motion.button)`
-         color: var(--text);
-         font-size: 1.8rem;
-         font-weight: 450;
-         color: var(--text);
-         padding: 0;
-         border: none;
-         outline: none;
-         background: none;
-         /* padding: 10px; */
-         transition: 0.5s ease background;
-         @media (max-width: 768px) {
-           font-size: 1.3rem;
-         }
-         :hover {
-           background: var(--change);
-         }
-       `
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 450;
+  color: var(--text);
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  /* padding: 10px; */
+  transition: 0.5s ease background;
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+  :hover {
+    background: var(--change);
+  }
+`
 
 export const ContentCover = styled(motion.div)`
   position: absolute;
@@ -155,7 +158,6 @@ export const FeaturedVideo = styled.div`
     width: 100%;
     max-height: 450px;
     box-sizing: border-box;
-    border: var(--change) solid 1px;
     object-fit: cover;
     @media (max-width: 450px) {
       max-height: 300px;
@@ -164,7 +166,6 @@ export const FeaturedVideo = styled.div`
   .gatsby-image-wrapper {
     height: 100%;
     object-fit: cover;
-    border: var(--change) 1px solid;
   }
   .marquee {
     position: absolute;
@@ -175,7 +176,7 @@ export const FeaturedVideo = styled.div`
     transform-origin: left center;
     transform: rotate(-45deg);
     background: var(--change);
-    box-shadow: 3px 3px 4px #17223b;
+    box-shadow: 3px 3px 4px #000;
     p {
       white-space: nowrap;
       color: var(--bg);
@@ -183,6 +184,10 @@ export const FeaturedVideo = styled.div`
     }
   }
 `
+
+export const HomeShadow = styled.div`
+         box-shadow: 3px 3px 4px #17223b;
+       `
 
 export const FeaturedProjects = styled.div`
   margin-top: 200px;

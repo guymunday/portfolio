@@ -9,6 +9,7 @@ import {
   HomeFeaturedSection,
   FeaturedVideo,
   FeaturedContent,
+  HomeShadow,
 } from "../../styles/homeStyles"
 // Scroll Animations
 import { useInView } from "react-intersection-observer"
@@ -49,28 +50,30 @@ const HomeHuman = ({ onCursor }) => {
             onMouseEnter={() => onCursor("hovered")}
             onMouseLeave={onCursor}
           >
-            <FeaturedVideo>
-              <video
-                loop
-                width="100%"
-                height="450px"
-                muted
-                onMouseOver={event => event.target.play()}
-                onMouseOut={event => event.target.load()}
-                onFocus={event => event.target.play()}
-                onBlur={event => event.target.load()}
-                preload="metadata"
-                poster={require("../../assets/images/human/humanMagOpen.jpg")}
-                src={require("../../assets/video/humanCoverAnimation.mp4")}
-              ></video>
-              <motion.div
-                animate={{ opacity: hovered ? 1 : 0 }}
-                transition={{ duration: 0.6, ease: [0.6, 0.05, -0.01, 0.9] }}
-                className="marquee"
-              >
-                <TakeAPeek />
-              </motion.div>
-            </FeaturedVideo>
+            <HomeShadow>
+              <FeaturedVideo>
+                <video
+                  loop
+                  width="100%"
+                  height="450px"
+                  muted
+                  onMouseOver={event => event.target.play()}
+                  onMouseOut={event => event.target.load()}
+                  onFocus={event => event.target.play()}
+                  onBlur={event => event.target.load()}
+                  preload="metadata"
+                  poster={require("../../assets/images/human/humanMagOpen.jpg")}
+                  src={require("../../assets/video/humanCoverAnimation.mp4")}
+                ></video>
+                <motion.div
+                  animate={{ opacity: hovered ? 1 : 0 }}
+                  transition={{ duration: 0.6, ease: [0.6, 0.05, -0.01, 0.9] }}
+                  className="marquee"
+                >
+                  <TakeAPeek />
+                </motion.div>
+              </FeaturedVideo>
+            </HomeShadow>
             <Flex spaceBetween>
               <h2>Human Magazine</h2>
               <motion.div

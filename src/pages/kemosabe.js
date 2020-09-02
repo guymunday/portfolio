@@ -3,10 +3,8 @@ import Layout from "../components/layout"
 import { Container } from "../styles/globalStyles"
 import HeroCopy from "../components/HeroCopy"
 import ProjectSkills from "../components/projects/ProjectSkills"
-// import ProjectOneColumn from "../components/projects/ProjectOneColumn"
-import ProjectOneColumnPadding from "../components/projects/ProjectOneColumnPadding"
+import ProjectOneColumn from "../components/projects/ProjectOneColumn"
 import { ProjectCopy } from "../styles/projectStyles"
-// import Image from "../components/images"
 import SEO from "../components/seo"
 
 const projectSkills = [
@@ -67,7 +65,7 @@ const KemosabePage = () => {
           </>
         }
       />
-      <ProjectOneColumnPadding
+      <ProjectOneColumn
         content={
           <>
             <video
@@ -83,12 +81,31 @@ const KemosabePage = () => {
       />
       <Container>
         <ProjectCopy>
-          I brought their core "inch wide, mile deep" philosophy front and
-          centre with a bold animation penetrating a "mile deep" throughout
-          their projects and applied it across the site.
+          I brought this philosophy front and centre with a bold animation
+          penetrating a "mile deep" throughout their projects and applied it
+          across the site.
         </ProjectCopy>
       </Container>
-      <ProjectOneColumnPadding
+      <ProjectOneColumn
+        content={
+          <video
+            loop
+            width="100%"
+            height="auto"
+            controls
+            muted
+            src={require("../assets/video/kemosabeCaseStudy.mp4")}
+          ></video>
+        }
+      />
+      <Container>
+        <ProjectCopy>
+          Working with the team, we approached the case studies with this core
+          idea in mind, refreshing the copy and user experience to put their
+          philosophy at the heart of every project.
+        </ProjectCopy>
+      </Container>
+      <ProjectOneColumn
         content={
           <>
             <video
@@ -102,7 +119,7 @@ const KemosabePage = () => {
           </>
         }
       />
-      <ProjectOneColumnPadding
+      <ProjectOneColumn
         content={
           <>
             <video
@@ -121,25 +138,6 @@ const KemosabePage = () => {
           Across the site the animations are powered with GSAP3 timelines with
           the homepage and the about page making use of the ScrollTrigger
           plugin.
-        </ProjectCopy>
-      </Container>
-      <ProjectOneColumnPadding
-        content={
-          <video
-            loop
-            width="100%"
-            height="auto"
-            controls
-            muted
-            src={require("../assets/video/kemosabeCaseStudy.mp4")}
-          ></video>
-        }
-      />
-      <Container>
-        <ProjectCopy>
-          Working with the team, we approached the case studies with the same
-          "inch wide" and the "mile deep" philosophy, refreshing the copy and
-          user experience and put it at the heart of every project.
         </ProjectCopy>
       </Container>
     </Layout>

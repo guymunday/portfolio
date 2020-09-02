@@ -3,8 +3,7 @@ import Layout from "../components/layout"
 import { Container } from "../styles/globalStyles"
 import HeroCopy from "../components/HeroCopy"
 import ProjectSkills from "../components/projects/ProjectSkills"
-// import ProjectOneColumn from "../components/projects/ProjectOneColumn"
-import ProjectOneColumnPadding from "../components/projects/ProjectOneColumnPadding"
+import ProjectOneColumn from "../components/projects/ProjectOneColumn"
 import ProjectTwoColumnPadding from "../components/projects/ProjectTwoColumnPadding"
 import ProjectTwoRowPadding from "../components/projects/ProjectTwoRowPadding"
 import Image from "../components/images"
@@ -28,7 +27,7 @@ const projectSkills = [
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
 const projectScope = [
-  "On-going project to help give young creatives valuble information about the creative industries, its structure and what oppotunities are out there.",
+  "On-going project to help give young creatives valuble information about the creative industries, its structure and what opportunities are out there.",
   "The current landing page is built on WordPress and I am in the process of building the full website with JAMstack technologies Gatsby.js, Prismic CMS and Netlify.",
 ]
 const scopeMapped = projectScope.map(scope => <p>{scope}</p>)
@@ -58,7 +57,7 @@ const NotOnlyPage = () => {
           }
         />
       </Container>
-      <ProjectOneColumnPadding
+      <ProjectOneColumn
         content={
           <video
             loop
@@ -136,11 +135,11 @@ const NotOnlyPage = () => {
       />
       <Container>
         <ProjectCopy>
-          I have been having fun creating short animations for our Instagram
-          page which has seen great engagement.
+          I have been having fun developing the brand as well as creating
+          animations for our Instagram page which has seen great engagement.
         </ProjectCopy>
       </Container>
-      <ProjectOneColumnPadding
+      <ProjectOneColumn
         content={
           <video
             loop
