@@ -10,6 +10,7 @@ import HomeNotOnly from "../components/homePage/HomeNotOnly"
 import HomePlayground from "../components/homePage/HomePlayground"
 import HomeAna from "../components/homePage/HomeAna"
 import HomeHuman from "../components/homePage/HomeHuman"
+import HomeTodo from "../components/homePage/HomeTodo"
 import SEO from "../components/seo"
 
 //Context
@@ -121,8 +122,9 @@ const IndexPage = props => {
                 </>
               }
             />
-            <HomeKemosabe onCursor={onCursor} />
             <HomeNotOnly onCursor={onCursor} />
+            <HomeKemosabe onCursor={onCursor} />
+            <HomeTodo onCursor={onCursor} />
             <HomeHuman onCursor={onCursor} />
             <HomePlayground onCursor={onCursor} />
             <HomeAna onCursor={onCursor} />

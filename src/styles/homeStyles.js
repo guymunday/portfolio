@@ -163,6 +163,18 @@ export const FeaturedVideo = styled.div`
       max-height: 300px;
     }
   }
+  .home-image {
+    width: 100%;
+    height: 450px;
+    @media (max-width: 450px) {
+      max-height: 300px;
+    }
+    .gatsby-image-wrapper {
+      width: 100%;
+      box-sizing: border-box;
+      object-fit: cover;
+    }
+  }
   .gatsby-image-wrapper {
     height: 100%;
     object-fit: cover;
@@ -186,7 +198,7 @@ export const FeaturedVideo = styled.div`
 `
 
 export const HomeShadow = styled.div`
-  box-shadow: 3px 3px 4px #17223b;
+  box-shadow: 3px 3px 4px #000;
   background: var(--change);
 `
 

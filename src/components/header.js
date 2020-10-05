@@ -35,6 +35,7 @@ const Header = ({ onCursor, setToggleMenu, toggleMenu }) => {
           <LightSwitch
             onMouseEnter={() => onCursor("pointer")}
             onMouseLeave={onCursor}
+            title="Toggle theme"
           >
             <ThemeToggle />
           </LightSwitch>

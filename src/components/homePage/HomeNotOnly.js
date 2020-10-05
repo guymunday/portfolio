@@ -62,7 +62,7 @@ const HomeNotOnly = ({ onCursor }) => {
                   onBlur={event => event.target.load()}
                   preload="metadata"
                   poster={require("../../assets/images/notonly/notOnlyButAlsoMeta.png")}
-                  src={require("../../assets/video/notOnlyWebsite.mp4")}
+                  src={require("../../assets/video/notOnlyHomePage.mp4")}
                 ></video>
                 <motion.div
                   animate={{ opacity: hovered ? 1 : 0 }}

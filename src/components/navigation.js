@@ -18,34 +18,41 @@ import { motion, AnimatePresence } from "framer-motion"
 const navRoutes = [
   {
     id: 0,
+    title: "Not Only — But Also",
+    path: "/notonlybutalso",
+    poster: "notOnlyButAlsoMeta.png",
+    video: "notOnlyHomePage.mp4",
+  },
+  {
+    id: 1,
     title: "Kemosabe",
     path: "/kemosabe",
     poster: "kemosabeHomePage.jpg",
     video: "kemosabeHomePage.mp4",
   },
   {
-    id: 1,
-    title: "Not Only — But Also",
-    path: "/notonlybutalso",
-    poster: "notOnlyButAlsoMeta.png",
-    video: "notOnlyWebsite.mp4",
+    id: 2,
+    title: "React To-do App",
+    path: "/",
+    poster: "todo.png",
+    video: "notOnlyHomePage.mp4",
   },
   {
-    id: 2,
+    id: 3,
     title: "Human Magazine",
     path: "/human",
     poster: "humanMagOpen.jpg",
     video: "humanCoverAnimation.mp4",
   },
   {
-    id: 3,
+    id: 4,
     title: "Playground",
     path: "/playground",
     poster: "playgroundHero.jpg",
     video: "playgroundVideo.mp4",
   },
   {
-    id: 4,
+    id: 5,
     title: "All Nippon Airways",
     path: "/ana",
     poster: "anaHero.jpg",
@@ -129,21 +136,43 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                         })
                       }
                     >
-                      <Link to={`${route.path}`}>
-                        <motion.div
-                          initial={{ x: 0 }}
-                          className="link"
-                          whileHover={{
-                            x: 25,
-                            transition: {
-                              duration: 0.4,
-                              ease: [0.6, 0.05, -0.01, 0.9],
-                            },
-                          }}
+                      {route.id === 2 ? (
+                        <a
+                          href="https://todo.guymunday.com"
+                          target="_blank"
+                          rel="noreferrer"
                         >
-                          {route.title}
-                        </motion.div>
-                      </Link>
+                          <motion.div
+                            initial={{ x: 0 }}
+                            className="link"
+                            whileHover={{
+                              x: 25,
+                              transition: {
+                                duration: 0.4,
+                                ease: [0.6, 0.05, -0.01, 0.9],
+                              },
+                            }}
+                          >
+                            {route.title}
+                          </motion.div>
+                        </a>
+                      ) : (
+                        <Link to={`${route.path}`}>
+                          <motion.div
+                            initial={{ x: 0 }}
+                            className="link"
+                            whileHover={{
+                              x: 25,
+                              transition: {
+                                duration: 0.4,
+                                ease: [0.6, 0.05, -0.01, 0.9],
+                              },
+                            }}
+                          >
+                            {route.title}
+                          </motion.div>
+                        </Link>
+                      )}
                     </motion.li>
                   ))}
                 </ul>
@@ -165,29 +194,58 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                 ></motion.div>
                 <motion.div className="video">
                   <AnimatePresence initial={false} exitBeforeEnter>
-                    <motion.img
-                      key={revealVideo.key}
-                      src={require(`../assets/images/posters/${revealVideo.poster}`)}
-                      initial={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      animate={{
-                        opacity: 1,
-                      }}
-                      transition={{ duration: 0.2, ease: "easeInOut" }}
-                    />
-                    <motion.video
-                      key={revealVideo.key}
-                      src={require(`../assets/video/${revealVideo.video}`)}
-                      initial={{ opacity: 0 }}
-                      exit={{ opacity: 0 }}
-                      animate={{
-                        opacity: 1,
-                      }}
-                      transition={{ duration: 0.2, ease: "easeInOut" }}
-                      loop
-                      autoPlay
-                      muted
-                    ></motion.video>
+                    {revealVideo.key === 2 ? (
+                      <>
+                        <motion.img
+                          key={revealVideo.key}
+                          src={require(`../assets/images/posters/${revealVideo.poster}`)}
+                          initial={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          animate={{
+                            opacity: 1,
+                          }}
+                          transition={{ duration: 0.2, ease: "easeInOut" }}
+                        />
+                        <motion.video
+                          key={revealVideo.key}
+                          initial={{ opacity: 0 }}
+                          exit={{ opacity: 0 }}
+                          animate={{
+                            opacity: 1,
+                          }}
+                          transition={{ duration: 0.2, ease: "easeInOut" }}
+                          loop
+                          autoPlay
+                          muted
+                        ></motion.video>
+                      </>
+                    ) : (
+                      <>
+                        <motion.img
+                          key={revealVideo.key}
+                          src={require(`../assets/images/posters/${revealVideo.poster}`)}
+                          initial={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          animate={{
+                            opacity: 1,
+                          }}
+                          transition={{ duration: 0.2, ease: "easeInOut" }}
+                        />
+                        <motion.video
+                          key={revealVideo.key}
+                          src={require(`../assets/video/${revealVideo.video}`)}
+                          initial={{ opacity: 0 }}
+                          exit={{ opacity: 0 }}
+                          animate={{
+                            opacity: 1,
+                          }}
+                          transition={{ duration: 0.2, ease: "easeInOut" }}
+                          loop
+                          autoPlay
+                          muted
+                        ></motion.video>
+                      </>
+                    )}
                   </AnimatePresence>
                 </motion.div>
               </NavVideos>

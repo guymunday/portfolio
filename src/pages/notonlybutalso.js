@@ -11,24 +11,22 @@ import { ProjectCopy } from "../styles/projectStyles"
 import SEO from "../components/seo"
 
 const projectSkills = [
-  "HTML /",
-  "SCSS /",
   "JavaScript /",
-  "GSAP3 /",
-  "WordPress /",
-  "PHP /",
-  "Adobe After Effects /",
-  "Adobe Illustrator /",
   "Gatsby.js /",
+  "React /",
   "CSS in JS /",
   "Prismic /",
+  "Framer Motion /",
+  "Adobe After Effects /",
+  "Adobe Illustrator /",
+  "GitHub /",
   "Netlify",
 ]
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
 const projectScope = [
   "On-going project to help give young creatives valuable information about the creative industries, its structure and what opportunities are out there.",
-  "The current landing page is built on WordPress and I am in the process of building the full website with JAMstack technologies Gatsby.js, Prismic CMS and Netlify.",
+  "Not Only — But Also is built with JAMstack technologies, namely Gatsby.js using Prismic as its CMS, querying the API using GraphQL. The data is then passed through to Gatsby templates using React props. The interactions and animations throughout the site are powered with Framer Motion.",
 ]
 const scopeMapped = projectScope.map(scope => <p>{scope}</p>)
 
@@ -147,16 +145,55 @@ const NotOnlyPage = () => {
             height="auto"
             controls
             muted
-            src={require("../assets/video/notOnlyWebsite.mp4")}
+            src={require("../assets/video/notOnlyHomePage.mp4")}
           ></video>
         }
       />
       <Container>
         <ProjectCopy>
-          All of the content we are collecting will exist on a new site built
-          with JAMstack technologies, namely Gatsby.js, Prismic CMS and Netlify.
-          The current landing page is built on a custom WordPress theme with
-          GSAP3 animations.
+          All the articles are organised into their own category based on the
+          job role that is being talked about. The pieces are highlighted by a
+          floating category sticker which is achieved using React state, data
+          from Prismic and a custom hook.
+        </ProjectCopy>
+      </Container>
+      <ProjectOneColumn
+        content={
+          <video
+            loop
+            width="100%"
+            height="auto"
+            controls
+            muted
+            src={require("../assets/video/notOnlyArticle.mp4")}
+          ></video>
+        }
+      />
+      <Container>
+        <ProjectCopy>
+          All of the content for the articles utilises Prismic's "slices" so we
+          can conditionally render content based on what is required for the
+          article.
+        </ProjectCopy>
+      </Container>
+      <ProjectOneColumn
+        content={
+          <video
+            loop
+            width="100%"
+            height="auto"
+            controls
+            muted
+            src={require("../assets/video/notOnlyHero.mp4")}
+          ></video>
+        }
+      />
+      <Container>
+        <ProjectCopy>
+          The hero section of the homepage maps over data from Prismic to create
+          these fun stickers that can be dragged, thrown and (when we have
+          enough content) can be used as a way to navigate the site to various
+          articles and categories.
         </ProjectCopy>
       </Container>
     </Layout>
