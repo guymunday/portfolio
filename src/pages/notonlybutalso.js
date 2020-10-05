@@ -165,8 +165,8 @@ const NotOnlyPage = () => {
       <Container>
         <ProjectCopy>
           All of the content for the articles utilises Prismic's "slices" so we
-          can conditionally render content based on what is required for the
-          article.
+          can conditionally render copy, videos, images, pull quotes and more
+          based on what is required for the article, providing flexibility.
         </ProjectCopy>
       </Container>
       <ProjectTwoColumnPadding
@@ -194,7 +194,7 @@ const NotOnlyPage = () => {
       <Container>
         <ProjectCopy>
           I have been developing the brand as well as creating animations for
-          our Instagram page which has seen great engagement.{" "}<br/>
+          our Instagram page which has seen great engagement. <br />
           <a href="https://www.instagram.com/notonly___butalso" target="_blank">
             Check it out here and give us a follow.
           </a>
