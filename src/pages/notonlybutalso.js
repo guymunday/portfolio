@@ -25,7 +25,7 @@ const projectSkills = [
 const projectMapped = projectSkills.map(skills => <li>{skills}</li>)
 
 const projectScope = [
-  "On-going project to help give young creatives valuable information about the creative industries, its structure and what opportunities are out there.",
+  "On-going project to help give young creatives valuable information about the creative industry, its structure and what opportunities are out there.",
   "Not Only — But Also is built with JAMstack technologies, namely Gatsby.js using Prismic as its CMS, querying the API using GraphQL. The data is then passed through to Gatsby templates using React props. The interactions and animations throughout the site are powered with Framer Motion.",
 ]
 const scopeMapped = projectScope.map(scope => <p>{scope}</p>)
@@ -109,32 +109,25 @@ const NotOnlyPage = () => {
           suits them.
         </ProjectCopy>
       </Container>
-      <ProjectTwoColumnPadding
-        contentOne={
+
+      <ProjectOneColumn
+        content={
           <video
             loop
             width="100%"
             height="auto"
             controls
             muted
-            src={require("../assets/video/notOnlyRoles.mp4")}
-          ></video>
-        }
-        contentTwo={
-          <video
-            loop
-            width="100%"
-            height="auto"
-            controls
-            muted
-            src={require("../assets/video/notOnlyThankYou.mp4")}
+            src={require("../assets/video/notOnlyHero.mp4")}
           ></video>
         }
       />
       <Container>
         <ProjectCopy>
-          I have been having fun developing the brand as well as creating
-          animations for our Instagram page which has seen great engagement.
+          The hero section of the homepage maps over data from Prismic to create
+          these fun stickers that can be dragged, thrown and (when we have
+          enough content) can be used as a way to navigate the site to various
+          articles and categories.
         </ProjectCopy>
       </Container>
       <ProjectOneColumn
@@ -176,24 +169,35 @@ const NotOnlyPage = () => {
           article.
         </ProjectCopy>
       </Container>
-      <ProjectOneColumn
-        content={
+      <ProjectTwoColumnPadding
+        contentOne={
           <video
             loop
             width="100%"
             height="auto"
             controls
             muted
-            src={require("../assets/video/notOnlyHero.mp4")}
+            src={require("../assets/video/notOnlyRoles.mp4")}
+          ></video>
+        }
+        contentTwo={
+          <video
+            loop
+            width="100%"
+            height="auto"
+            controls
+            muted
+            src={require("../assets/video/notOnlyThankYou.mp4")}
           ></video>
         }
       />
       <Container>
         <ProjectCopy>
-          The hero section of the homepage maps over data from Prismic to create
-          these fun stickers that can be dragged, thrown and (when we have
-          enough content) can be used as a way to navigate the site to various
-          articles and categories.
+          I have been developing the brand as well as creating animations for
+          our Instagram page which has seen great engagement.{" "}<br/>
+          <a href="https://www.instagram.com/notonly___butalso" target="_blank">
+            Check it out here and give us a follow.
+          </a>
         </ProjectCopy>
       </Container>
     </Layout>

@@ -125,6 +125,12 @@ export const ProjectCopy = styled.p`
   font-weight: 450;
   margin: 0 auto 50px auto;
   text-align: center;
+  a {
+    color: var(--text);
+    font-size: 1.3rem;
+    font-weight: 450;
+    text-decoration: underline;
+  }
 `
 
 export const ProjectOneColumnFlexPadding = styled(motion.div)`
@@ -345,4 +351,3 @@ export const HumanRotate = styled.div`
     }
   }
 `
-
