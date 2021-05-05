@@ -100,41 +100,41 @@ export const NavFooter = styled.div`
 `
 
 export const NavVideos = styled.div`
-         position: absolute;
-         top: 0;
-         bottom: 0;
-         left: 25%;
-         z-index: -1;
-         height: 100%;
-         width: 100%;
-         /* background: #000; */
-         @media (max-width: 600px) {
-           display: none;
-         }
-         .reveal {
-           width: 100%;
-           background: var(--change);
-           position: absolute;
-           top: 0;
-           bottom: 0;
-           left: 0;
-         }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  /* background: #000; */
+  @media (max-width: 600px) {
+    display: none;
+  }
+  .reveal {
+    width: 100%;
+    background: var(--change);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
 
-         .video {
-           /* background: #000; */
-           position: absolute;
-           height: 100%;
-           margin: 0;
-           z-index: -1;
-           img {
-             position: absolute;
-             top: 0;
-             left: 0;
-             height: 100%;
-             z-index: -1;
-           }
-           video {
-             height: 100%;
-           }
-         }
-       `
+  .video {
+    /* background: #000; */
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    z-index: -1;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+    }
+    video {
+      height: 100%;
+    }
+  }
+`

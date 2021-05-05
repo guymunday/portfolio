@@ -96,44 +96,38 @@ const IndexPage = props => {
 
   return (
     <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <Layout>
-          <SEO title="Guy Munday" />
-          <HeroCopy
-            copy={
-              <>
-                Hello, I'm Guy.{" "}
-                <span
-                  className="wiggle"
-                  role="img"
-                  aria-label="waving hand emoji"
-                >
-                  👋
-                </span>{" "}
-                I'm a Front-end Developer with a love for motion, interaction
-                design and all things digital. I love exploring new technologies
-                and learning new things along the way.{" "}
-                <span role="img" aria-label="construction emoji">
-                  🚧
-                </span>{" "}
-                New projects coming soon.{" "}
-                <span role="img" aria-label="construction emoji">
-                  🚧
-                </span>
-              </>
-            }
-          />
-          {/* <HomeKemosabe onCursor={onCursor} />
-          <HomeNotOnly onCursor={onCursor} />
-          <HomeHuman onCursor={onCursor} /> */}
-          <HomePlayground onCursor={onCursor} />
-          {/* <HomeAna onCursor={onCursor} /> */}
-        </Layout>
-      </motion.div>
+      {finishLoading &&
+      typeof window !== "undefined" &&
+      !sessionStorage.getItem("first_time") ? (
+        <Loading />
+      ) : (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <Layout>
+            <SEO title="Guy Munday" />
+            <HeroCopy
+              copy={
+                <>
+                  Hello, I'm Guy.{" "}
+                  <span role="img" aria-label="waving hand emoji">
+                    👋
+                  </span>{" "}
+                  I'm a Front-end Developer and Designer with a love for motion,
+                  interaction design and all things digital. I love exploring
+                  new technologies and learning new things along the way.
+                </>
+              }
+            />
+            <HomeKemosabe onCursor={onCursor} />
+            <HomeNotOnly onCursor={onCursor} />
+            <HomeHuman onCursor={onCursor} />
+            <HomePlayground onCursor={onCursor} />
+            <HomeAna onCursor={onCursor} />
+          </Layout>
+        </motion.div>
       )}
     </AnimatePresence>
   )
