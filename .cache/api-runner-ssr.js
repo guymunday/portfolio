@@ -1,20 +1,20 @@
 var plugins = [{
-      plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/Guy/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr'),
+      plugin: require('/Users/Guy/portfolio/node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr'),
       options: {"plugins":[],"fonts":[{"family":"Inter","variable":true,"weights":["200..900"]}]},
     },{
-      plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/Guy/portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Guy Munday's Portfolio","short_name":"Guy Munday","start_url":"/","background_color":"#17223b","theme_color":"#17223b","display":"minimal-ui","icon":"src/assets/images/guyFavicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"bec1e65911f28df9c0c75b1e38245d31"},
     },{
-      plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-dark-mode/gatsby-ssr'),
+      plugin: require('/Users/Guy/portfolio/node_modules/gatsby-plugin-dark-mode/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/Users/Guy/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/Guy/ar1/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/Users/Guy/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-177162678-1"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

@@ -4,6 +4,7 @@ import { Container } from "../styles/globalStyles"
 import Iframe from "react-iframe"
 import HeroCopy from "../components/HeroCopy"
 import SEO from "../components/seo"
+import HumanRotateSection from "../components/projects/HumanRotateSection"
 
 const PlaygroundPage = () => {
   return (
@@ -23,6 +24,7 @@ const PlaygroundPage = () => {
             </>
           }
         />
+        <HumanRotateSection />
         <Iframe
           url="https://codepen.io/guymunday/embed/WNwpoOQ?height=445&theme-id=dark&default-tab=result"
           width="100%"

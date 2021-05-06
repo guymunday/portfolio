@@ -23,12 +23,17 @@ const projectScope = [
   "HTML5 /",
   "CSS3 /",
   "SCSS /",
-  "CSS in JavaScript",
   "JavaScript /",
   "ES6+ /",
   "React /",
   "Gatsby.js /",
+  "Next.js /",
+  "Styled Components /",
+  "Shopify /",
+  "Node.js /",
+  "Express /",
   "WordPress /",
+  "AWS /",
   "GitHub /",
   "jQuery /",
   "Netlify /",
@@ -36,12 +41,11 @@ const projectScope = [
   "GSAP3 /",
   "Framer Motion /",
   "GraphQL /",
-  "WooCommerce /",
-  "PrestaShop",
+  "WooCommerce",
 ]
 const scopeMapped = projectScope.map(scope => <li>{scope}</li>)
 
-const AnaPage = () => {
+const AboutPage = () => {
   return (
     <Layout>
       <SEO title="About Me" />
@@ -55,18 +59,26 @@ const AnaPage = () => {
               </span>{" "}
               <br />
               <br />
-              Originally from Stockport, I'm currently living in south London and
-              working at the creative agency, Kemosabe.
+              Originally from Stockport, I'm currently living in south London
+              and working at the creative agency,{" "}
+              <a
+                href="https://www.wildishandco.co.uk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Wildish & Co
+              </a>
+              .
             </>
           }
         />
         <CopyBig
           copy={
             <>
-              I have over 4 years commercial experience working as both a
-              Front-end Developer and Designer. I love creating enjoyable and
-              engaging user experiences with a focus on beautiful design and
-              usability. I also co-run{" "}
+              I have 5 years commercial experience working as both a Front-end
+              Developer and Designer. I love creating enjoyable and engaging
+              user experiences with a focus on beautiful design and usability. I
+              also co-run{" "}
               <a
                 href="https://notonlybutalso.org"
                 target="_blank"
@@ -89,4 +101,4 @@ const AnaPage = () => {
   )
 }
 
-export default AnaPage
+export default AboutPage

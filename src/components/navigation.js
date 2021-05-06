@@ -25,38 +25,10 @@ const navRoutes = [
   },
   {
     id: 1,
-    title: "Kemosabe",
-    path: "/kemosabe",
-    poster: "kemosabeHomePage.jpg",
-    video: "kemosabeHomePage.mp4",
-  },
-  {
-    id: 2,
-    title: "React To-do App",
-    path: "/",
-    poster: "todo.png",
-    video: "notOnlyHomePage.mp4",
-  },
-  {
-    id: 3,
-    title: "Human Magazine",
-    path: "/human",
-    poster: "humanMagOpen.jpg",
-    video: "humanCoverAnimation.mp4",
-  },
-  {
-    id: 4,
     title: "Playground",
     path: "/playground",
     poster: "playgroundHero.jpg",
     video: "playgroundVideo.mp4",
-  },
-  {
-    id: 5,
-    title: "All Nippon Airways",
-    path: "/ana",
-    poster: "anaHero.jpg",
-    video: "We Are Japan_1.mp4",
   },
 ]
 

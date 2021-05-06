@@ -34,7 +34,7 @@ export const Content = styled(motion.h2)`
   @media (max-width: 768px) {
     font-size: 1.3rem;
   }
-  span {
+  .wiggle {
     display: inline-block;
     animation: ${wiggleEmoji} 1.5s ease infinite;
   }

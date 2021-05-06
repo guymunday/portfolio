@@ -45,12 +45,12 @@ const NotOnlyPage = () => {
               >
                 Not Only — But Also
               </a>{" "}
-              is project that my partner and I have launched over the past few
-              weeks. It's a new platform to shed light on the other roles that
-              exist in the creative industry that don't often get talked about.
-              We’re collecting together resources, interviews and more to help
-              young creatives navigate these different roles – What are they?
-              Who does them? And what does it take to get into them?
+              is project that my partner and I have launched. It's a new
+              platform to shed light on the other roles that exist in
+              the creative industry that don't often get talked about. We’re
+              collecting together resources, interviews and more to help young
+              creatives navigate these different roles – What are they? Who does
+              them? And what does it take to get into them?
             </>
           }
         />

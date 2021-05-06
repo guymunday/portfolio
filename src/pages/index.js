@@ -10,7 +10,6 @@ import HomeNotOnly from "../components/homePage/HomeNotOnly"
 import HomePlayground from "../components/homePage/HomePlayground"
 import HomeAna from "../components/homePage/HomeAna"
 import HomeHuman from "../components/homePage/HomeHuman"
-import HomeTodo from "../components/homePage/HomeTodo"
 import SEO from "../components/seo"
 
 //Context
@@ -86,51 +85,36 @@ const IndexPage = props => {
     dispatch({ type: "CURSOR_TYPE", cursorType: cursorType })
   }
 
-  const [finishLoading, setFinishLoading] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setFinishLoading(false)
-      sessionStorage.setItem("first_time", "1")
-    }, 3000)
-  }, [])
-
   return (
     <AnimatePresence>
-      {finishLoading &&
-      typeof window !== "undefined" &&
-      !sessionStorage.getItem("first_time") ? (
-        <Loading />
-      ) : (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <Layout>
-            <SEO title="Guy Munday" />
-            <HeroCopy
-              copy={
-                <>
-                  Hello, I'm Guy.{" "}
-                  <span role="img" aria-label="waving hand emoji">
-                    👋
-                  </span>{" "}
-                  I'm a Front-end Developer and Designer with a love for motion,
-                  interaction design and all things digital. I love exploring
-                  new technologies and learning new things along the way.
-                </>
-              }
-            />
-            <HomeNotOnly onCursor={onCursor} />
-            <HomeKemosabe onCursor={onCursor} />
-            <HomeTodo onCursor={onCursor} />
-            <HomeHuman onCursor={onCursor} />
-            <HomePlayground onCursor={onCursor} />
-            <HomeAna onCursor={onCursor} />
-          </Layout>
-        </motion.div>
-      )}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <Layout>
+          <SEO title="Guy Munday" />
+          <HeroCopy
+            copy={
+              <>
+                Hello, I'm Guy.{" "}
+                <span role="img" aria-label="waving hand emoji">
+                  👋
+                </span>{" "}
+                I'm a Front-end Developer with a love for motion,
+                interaction design and all things digital. I love exploring new
+                technologies and learning new things along the way. 🚧 New
+                projects coming soon 🚧
+              </>
+            }
+          />
+          <HomeNotOnly onCursor={onCursor} />
+          {/* <HomeKemosabe onCursor={onCursor} />
+          <HomeHuman onCursor={onCursor} /> */}
+          <HomePlayground onCursor={onCursor} />
+          {/* <HomeAna onCursor={onCursor} /> */}
+        </Layout>
+      </motion.div>
     </AnimatePresence>
   )
 }
